@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+            list-style: none;
+            text-decoration: none;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        .flex
+        {
+            display: flex;
+            flex: Wrap;
+            justify-content: space-between;
+        }
+        .container
+        {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no repeat;
+        }
+        nav .logo{
+            color:white;
+            font-size: 35px;
+            font-weight: bold;
+            line-height: 70px;
+            padding-left: 40px;
+
+
+        }
+        .nav
+        {
+            height:70px;
+            background-color: rgb(24, 31, 56);  
+        }
+        nav ul{
+            margin: right;
+        }
+        nav ul li{
+            display: inline-block;
+
+        }
+        nav ul ia a{
+            color: white;
+            display:block;
+            padding: 0 i5px;
+            line-height: 70px;
+            font-size: 20px;
+            transition: .5s;
+
+        }
+        nav ul ul{
+            position: absolute;
+            top: 85px;
+            border-top :3px solid;
+            opacity:0;
+            visibility: hidden
+        }
+        nav ul li:hoer>ul
+        {
+            top:70px;
+            opacity:1;
+            visibility:visible;
+            transition: 3s linear;
+        }
+        nav ul ul li{
+            width: 150px;
+            display:list-item;
+            position:relative;
+            border: 1px ;
+            border-top: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="flex">
+            <div class="logo">
+                <img src="https://web-static.wrike.com/tp/static/assets/img/header-v2/wrike-logo-dark.svg" alt="">
+                <h1>Wrike</h1>
+            </div>
+            <ul>
+                <li><a href='#'>Why Wrike?</a></li>
+                <li><a href='#'>Features</a></li>
+                <li><a href='#'>Resources</a></li>
+                <li>
+                    <a href='#'>Pricing
+                        <i class="fas fa-caret-down"></i>
+                    </a> </li>
+
+            </ul>
+        <ul>
+            <li><a href='#'>Contact Sales</a></li>
+            <li><a href='#'>EN</a></li>
+            <li><a href='#'>Login</a></li>
+            <button>Start for free</button>
+
+        </ul>
+
+    </nav>>
+</body>
+</html>

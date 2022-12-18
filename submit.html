@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.cpopup{
+    background-color: aqua;
+    border: 2px solid red;
+width: 4Ø0px;
+background: #fff;
+border-radius: 6px;
+position: absolute;
+top: 0%;
+left: 50%;
+transform: translate(-50%, -50%) scale(0.5);
+text-align: center;
+padding: 0 30px 30px ;
+color  : #333;
+visibility: hidden
+}
+.copen-popup{
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+     ul
+     {
+        margin:0;
+        padding:0;
+        list-style: none;
+        height: 70px;
+        background-color:rgb(4, 69, 77);
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        /* border: 4px solid yellow; */
+        padding-left: 60px;
+        padding-top: 25px;
+        margin:-25px;
+        /* background-color: rgb(235, 245, 243); */
+
+     }
+     li
+     {
+        float: left;
+        /* border-right: 1px solid blue; */
+        /* color: white; */
+       
+     }
+     .help
+     {
+        padding: 5px;
+        padding-top: 25px;
+        margin-left: 5px;
+        /* text-decoration: none; */
+     }
+     .en
+     {
+        margin-left: 600px;
+        margin-right: 20px;
+        margin-top: 25px;
+        /* text-decoration: none; */
+     }
+     .sub
+     {
+       margin-top: 25px;
+       /* border: 2px solid rgb(5, 183, 96); */
+       color:  rgb(5, 183, 96);
+       
+     }
+     .login
+     {
+        margin-top: 25px;
+        margin-left: 10px;
+        background-color:  rgb(5, 183, 96);
+     }
+     a{
+        color: white;
+     }
+    
+     .s_submit{
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        word-spacing: 1px;
+        /* border: 1px solid yellowgreen */
+     }
+     .s_please{
+        font-size: larger;
+     }
+     h1{
+        font-size: 40px;
+     }
+     .which
+     {
+        font-size: 15px;
+        font-weight: bold;
+     }
+     .box
+     {
+       width:80%;
+       height:45px;
+       border-radius: 5px;
+     }
+     .trouble
+     {
+        width:80%;
+       height:180px;
+       border-radius: 5px;
+     }
+     .box1
+     {
+        width:80%;
+       height:45px;
+       margin-top: 20px;
+       border-radius: 3px;
+     }
+     .which{
+       text-align: left;
+       padding-left: 60px;
+       font-size: large;
+     }
+     .wrike
+     {
+        color: green;
+        font-size: x-large;
+        background-color: rgb(235, 245, 243);
+        height:60px;
+        padding-top: 20px ;
+        padding-left: 20px;
+        /* padding-bottom: ; */
+        
+     }
+    .pls{
+        text-align: left;
+        padding-left: 60px;
+        font-size: small;
+        padding-right: 70px;
+    }
+    .h1s{
+        visibility: hidden;
+    }
+    .openH1{
+        visibility:visible;
+    }
+     #demo
+     {
+        margin-left: 30%;
+     }
+    </style>
+</head>
+<body>
+    <div class="s_container">
+ <ul >
+    <li>
+        <img src="https://web-static.wrike.com/tp/static/assets/img/header-v2/wrike-logo-dark.svg" alt="">
+    </li>
+    <li class="help"><a href="#">helpcenter</a></li>
+    <li class="en"><a href="#">En</a></li>
+    <li>
+        <button class="sub">Submit a Request</button>
+    </li>
+    <li>
+        <button class="login">Login</button>
+    </li>
+    
+ </ul>
+ <div>
+ <p class="wrike">Wrike Help Center > submit a request</p>
+</div>
+        <div class="s_submit">
+            <h1>Submit a Ticket</h1>
+            <p class="s_please">Please submit only one request per form. Our Customer Support Team will get back to you as soon as we can</p>
+            <form >
+                <p class="which">Which email should we reply to?</p>
+                <input class="box" type="text"><br>
+                <p class="which">Which category best describes your request?</p>
+                <input class="box" type="text"><br>
+                <p class="which">What's the subject of your request?</p>
+                <input class="box" type="text"><br>
+                <p class="which">What are you having trouble with?</p>
+                <p class="pls">Please explain in as much detail as possible. The more info we 
+                    have, the faster we can help you</p>
+                <input class="trouble" type="text"><br>
+                <p class="which">Do you have any attachments? (optional)</p>
+                <p class="pls">Please include screenshots or videos if you can! 
+                    You can attach up to 5 files, with a max size of 50 MB per file.</p>
+                <input class="box" type="text"><br>
+                <!-- <button class="box1" > submit</button> -->
+                <!-- <h1 id="ddd" class="h1s">This is your tickit number : </h1> -->
+                <!-- <button id="ddd" class="h1s"> OK</button>
+                 -->
+                
+              </form>
+              <button class="box1" id="abc">Submit</button>
+        </div>
+ </div>
+ <div>
+    <!-- <div class="cpopup" >
+        <h1 id="demo">Thank you!</h1>
+        <!-- <input class="box1" type="submit" onclick="opens()">Submit</button> -->
+        <!-- <h1>This is your tickit number : </h1>
+        <input class="box1" type="submit" onclick="closes()">Submit</button> 
+        </div> -->
+ </div>
+ <h1 id="demo"></h1>
+ <script src="random.js"></script>
+</body>
+</html>
+<script>
+
+// let popup =document.getElementById("cpopup");
+//     function opens(){
+//         popup.classList.add("copen-popup");
+//     }
+
+//     function closes(){
+//         popup.classList.remove("copen-popup");
+
+//     }
+
+    let  on = document.getElementById("ddd");
+    function opn(){
+        on.classList.add("openH1");
+    }
+
+    function cls(){
+        on.classList.remove("openH1");
+    }
+</script>

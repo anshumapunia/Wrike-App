@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <style>
+        body{
+            background-color: rgb(235, 245, 243);
+        }
+        /* div
+        {
+            width: 100%;
+        } */
+        .navbar
+        {
+            background-color: rgb(24, 31, 56);
+            max-height: 70px;
+            /* border: 2px solid gold; */
+            position: fixed;
+            margin-top: -30px;
+            width: 98.7%;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 3px 3px;
+            padding: 7px 5px;
+        }
+        .navbar li a{
+            padding:3px 3px;
+            text-decoration: none;
+            color: white;
+        } 
+        .second
+        {
+            display: flex;
+            background-color: rgb(24, 31, 56);
+           
+        }
+        .second1
+        {
+            color:white;
+            width: 100%;
+            /* padding-bottom/: 23px; */
+            padding-left: 50px;
+            margin-top: 100px;
+        }
+        .image
+        {
+          margin: auto;
+        }
+        .image1
+        {
+           
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        .logo
+        {
+            margin: 10px 10px;
+            padding-left: 20px;
+           
+        }
+        .logo img{
+            height: 120;
+            width: 60;
+        }
+        .container
+        {
+            margin: auto;
+            /* border:1px solid red; */
+            display: flex;
+            justify-content: center;
+        }
+        .col
+        {
+           max-width: 250px;
+           
+           background-color: white;
+           float:left;
+           /* border:1px solid red;  */
+           padding: 30px;
+           margin-left: 30px; 
+           margin-top: 20px;
+           border-radius: 15px;
+           letter-spacing: 0.5px;
+        }
+        .flex
+        {
+            display: flex;
+            background-color:  rgb(24, 31, 56);
+            padding: 60px 0px 100px 0px;
+        }
+        .site
+        {
+            margin: auto;
+            
+        }
+        .flex1
+        {
+            color: white;
+            padding-top: 200px;
+            padding-left: 40px;
+        }
+        .div
+        {
+            background-color: rgb(12, 50, 69);
+        }
+        .div ul{
+            overflow: auto;
+        }
+        .div li{
+            float: left;
+            list-style: none;
+            margin: 3px 3px;
+        }
+        .div li a{
+            padding:3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .colour
+        {
+            background-color: rgb(12, 50, 69);
+            color: white;
+            min-height: 850px;
+            /* border: 2px solid red; */
+        } 
+        .events
+        {
+            padding-bottom: 30px;
+            /* margin:auto; */
+                margin-right: 60px;
+        }
+        .flap
+        {
+            display: flex;
+
+        }
+        .flex2{
+            color: black;
+            display: flex;
+        }
+        .for
+        {
+            background-color: rgb(235, 245, 243);
+            text-align: center; 
+        }
+        .container1
+        {
+           
+            grid-column: 3 1fr;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+         
+            
+        }
+        .col1
+        {
+           max-width: 300px;
+        max-height:120px;
+           background-color:white;
+           float:left;
+           border:1px solid red; 
+           padding:40px; 
+           margin: 10px 10px 10px 10px;
+           border-radius: 10px;
+           letter-spacing: .75px;
+        }
+        .head
+        {
+            background-color: rgb(24, 31, 56);
+          
+            height: max-content;
+        }
+        .head1
+        {
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+            padding-bottom: 20px;
+            padding-top: 15px;
+           
+        }
+        .head2
+        {
+            color: white;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 70px;
+            font-size: x-large;
+            background-color: rgb(76, 111, 125);
+            border-radius: 2px;
+        }
+        .head3
+        {
+            color: white;
+            padding-left: 60px;
+            padding-top: 150px;
+            font-size: x-large;
+            padding-right:40px ;
+        }
+        .mid
+        {
+            display: flex;
+        }
+        .menu
+        {
+            float: right;
+        }
+        .nav1
+        {
+            align-items: center;
+            margin-top: -23px;
+        }
+        .header-weight
+        {
+            font-weight: 700;
+            font-size: 50px;
+           
+        }
+       .center
+       {
+        text-align: center;
+        font-size: xx-large;
+        margin-top: 50px;
+       }
+       .input{
+        min-height: 48px;
+        /* padding: 20px 0 2px 20px; */
+        /* padding-bottom: 20px; */
+        font-size: 18px;
+        border-radius: 8px;
+       }
+       .button1{
+        
+        background-color: rgb(8, 207, 101);
+        height: 55px;
+        width: 170px;
+        border-radius: 8px;
+        /* padding-top: 25px; */
+        /* padding-bottom: 25px; */
+        text-align:center;
+        font-size: large;
+        color: white;
+     
+        
+       
+        
+       }
+       .Explore{
+        color: rgb(5, 184, 113);
+        font-weight: 25px;
+        font-size: 23px;
+        cursor: pointer;
+       }
+       .Explore:hover {
+        color: rgb(118, 207, 126);
+        }
+
+        .trust{
+            color: gray;
+            font-size: small;
+            margin-top: -5px;
+        }
+        .empower{
+            max-width: 55%;
+            margin: auto;
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: 15px;
+        }
+        .learn{
+            color: rgb(5, 184, 113);
+            font-size: large;
+            font-weight:bold;
+            letter-spacing: 1px;
+        }
+        .see{
+            margin: auto;
+            text-align: center;
+            color: rgb(5, 184, 113);
+            font-size: large;
+            font-weight:00px;
+            padding-top:30px ;
+        }
+
+        .get{
+            text-align: center;
+            background-color: rgb(5, 184, 113);
+            color: white;
+            max-width: fit-content;
+            padding: 20px 50px 20px 50px;
+            margin: auto;
+            margin-top: 50px;
+            font-size: larger;
+            border-radius: 10px;
+        letter-spacing: 1px;
+        }
+       .getYour{
+        padding-left: 10px;
+        font-size: x-large;
+       }
+       .the{
+        margin: auto;
+        text-align: center;
+        padding-top: 20px;
+        font-size: xx-large;
+       }
+       .maximize{
+        text-align: center;
+        padding-top: 20px;
+         margin-left: 16%;
+        margin-right: 16%;
+        font-size: large;       
+       }
+       .dash{
+        margin-left: 350px;
+        margin-top: 50px;
+        font-size: larger;
+       }
+       .customizable{
+        font-size: x-large;
+        padding-right: 100px;
+       }
+       
+       .custo{
+        margin-left: 4%;
+        margin-right: 10%;
+        margin-top: 10%;
+       }
+       .start{
+        margin-left: 40%;
+        margin-right: 50%;
+        background-color: blueviolet;
+        font-size: large;
+            font-weight:bold;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 15px;
+            border-radius: 4px;
+          
+       }
+       .mast
+       {
+        margin-left: 40px;
+      
+        padding-top: 100px;
+        padding-bottom: 100px;
+       }
+       .get1
+       {
+        text-align: center;
+            background-color: rgb(5, 184, 113);
+            color: white;
+            max-width: fit-content;
+            padding: 20px 50px 20px 50px;
+            margin: auto;
+            margin-top: 50px;
+            font-size: larger;
+            border-radius: 10px;
+        letter-spacing: 1px;
+        justify-content: center;
+       }
+       .inte
+       {
+        margin-left: 20px;
+        font-size: x-large;
+        margin-right: 20px;
+        padding-top: 20px;
+       }
+       .connect
+       {
+        text-align: center;
+        padding-top: 20px;
+         margin-left: 17%;
+        margin-right: 17%;
+        font-size: large;
+       }
+       .all
+       {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+       }
+       .star{
+        background-color: rgb(255, 192, 0);
+        height:50px;
+        width:200px;
+        border-radius: 5px;
+        border: 1px solid rgb(255, 192, 0);
+
+       }
+       .inte{
+        padding-top: 10px;
+        padding-bottom: 10px;
+       }
+       .stor
+       {
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    
+        border-radius: 10px;
+        max-width: fit-content;
+    
+        overflow: hidden;
+    }
+       .stories{
+   
+        border-radius: 20px;
+        
+       }
+    
+      
+       
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li >
+                    <!-- <div> -->
+                        <img class="nav1" src="https://web-static.wrike.com/tp/static/assets/img/header-v2/wrike-logo-dark.svg" alt="">
+                        <!-- <h3>Wrike</h3> -->
+                    <!-- </div> -->
+                </li>
+                <li>
+                <li><a href="#">Why Wrike?</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </li>
+            <div class="menu">
+            <li>
+                
+                <li><a href="submit.html">Contact Support</a></li>
+                <li><a href="#">En</a></li>
+                <li><a href="#">Login</a></li>
+                <li>
+                    <button>Start for free</button>
+                </li>
+            
+                </li>
+            </div>
+
+            </ul>
+        </nav>
+    </header>
+        <div class="second">
+        <div class="second1">
+            <div > 
+            <p class="header-weight">Remove barriers,</br> find clarity, </br>  exceed goals</p>
+        </div>
+        <div>
+            <p class="header-weight1">Anything is possible with the most powerful work
+                management software at your fingertips</p>
+            </div>
+            <div>
+                <input class="input" type="email" name="email" max-length="300px">
+                <button class="button1">Get Started</button>
+            </div>    
+            <div>
+                <p class ="Explore">Explore our new platform</p>
+            </div>  
+             </div>
+        <div class="image">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/95fbafc9-6609-4b2d-aa0b-ceba4f4c4cbb/rebrand-hero-illustration-homepage-screenshots-dark-mobile.png" width="550" height="400" alt="">
+            
+        </div>
+    </div>
+
+    <div class="image1">
+        <div class="logo">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-google.svg" alt="">
+        </div>
+        <div class="logo">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/17e81db2-0802-47a7-8037-8cb11d166299/1440-logoroll-logo-syneos.svg">
+        </div>
+        <div class="logo">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-lyft.svg" alt="">
+        </div>
+        <div class="logo">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/1440-logoroll-logo-siemens.svg" alt="">
+        </div>
+        <div class="logo">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/473c0f49-59e8-4422-89d7-184c44f362cf/1440-logoroll-logo-nickelodeon.svg" alt="">
+        </div>
+        <div class="logo">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-oglivy.svg" alt="">
+        </div>
+        <div class="logo">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/1440-logoroll-logo-snowflake.svg" alt="">
+        </div>
+
+        <div>
+            <p class="trust">TRUSTED BY 20,000+ ORGANIZATIONS WORLDWIDE</p>            
+        </div>
+        
+    </div>
+    <div  >
+        <h3 class="center" >Transform the Way your team work</h3>
+        <p class = "empower">Empower your teams to do the best work of their lives with 360 visibility, true cross Departmental
+            collabration, and powerfull automation
+        </p>
+
+    </div>
+    <div class="container">
+        <div class="col">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/f12bf685-64af-4413-a42e-80e58ed088ee/evo-icp-hp-ps-light.png" height="188" width="224" alt="">
+            <h3>Professional Services</h3>
+            <P>Take service delivery to the next level with wrike's powerful platform.
+                 Manage resources, track billable hours and make informed decisions with ease.
+            </P>
+            <p class ="learn">Learn More</p>
+        </div>
+        <div class="col">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/8b283fef-6bd1-4513-8398-228095b64833/evo-icp-hp-marketing-light.png" height="188" width="224" alt="">
+            <h3>Marketing</h3>
+            <p>Empower your markating team with custamizable workflows, leading DAM tools,
+                 and dynamic reporting to help create high-performing campaings.</p>
+            <p class ="learn">Learn More</p>
+        </div>
+        <div class="col">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/4486fa19-a0c3-4f16-8d12-60ddfefec7c8/evo-icp-hp-pm-light.png" height="188" width="224" alt="">
+            <h3>Project Management</h3>
+            <p>Be the collabrative force that unifies your bussiness with improved planning,
+                 risk management, and automation software to deliver better results.</p>
+            <p class ="learn">Learn More</p>
+        </div>
+        <div class="col">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/0eadfaae-5c62-44fe-a375-cfdaab468ac0/evo-icp-hp-it-light.png" height="188" width="224" alt="">
+            <h3>IT</h3>
+            <p>Meat Workforce and delivery needs by optimizing agile IT workflows.
+                Manage strategic initiatives and in the same place.</p>
+            <p class ="learn">Learn More</p>
+        </div>
+
+    </div>
+    <div classs="Explore">
+        <li class="see">See All teams</li>
+        <p  class="get">Get Started</p>
+    </div>
+
+
+<div class="flex">
+    <div class="flex1">
+        <li>Holiday Promotion</li>
+        <h3 class="getYour">Get Your free gift!</h3>
+        <p >For a limited time only, Wrike is offering a free gift to new Customers!
+            signup with a qualifiying subscription for December 31 to claim your prizes
+        </p>
+        <li class="learn">Learn More</li>
+    </div>
+    <div class="site">
+        <img src="https://web-static.wrike.com/tp/storage/uploads/24da2538-075d-4fa9-9a78-b73af61d7628/gift-by-wrike-promo-2x.png" width="600px" heigth="600px" alt="">
+    </div>
+</div>
+<div class="colour">
+    <div>
+        <h2 class="the">The Most Versatile Work Management Platform</h2>
+        <p class="maximize">Maximize your Team's Prformance, accelerate growth, and improve customer experience with Wrike's robust and extensive features</p>
+    </div>
+    <div class="div">
+        <ul class="dash">
+            <li><a href="#">DashBoards</a></li>
+            <li><a href="#">Cross-tagging</a></li>
+            <li><a href="#">Integration</a></li>
+            <li><a href="#">Proofing</a></li>
+            <li><a href="#">Gantt Charts</a></li>
+        </ul>
+    </div>
+</header>
+    <div class="flap">
+        <div class="custo">
+            <h3 class="customizable">Customizable dashboards</h3>
+            <p>Never miss to task with personalized dashboards. see what you team is working on in a comorehensive
+                view and share Progress across the organization.</p>
+                <p class="learn">Learn More</p>
+        </div>
+        <div class="events">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/ef0e5d1a-124a-4508-80f6-950b3b129a48/rebrand-screenshot-dashboards-resized-2x.png" height="110%" width="110%" alt="">
+        </div>
+    </div>
+    <div class="start">
+        <button >Get Started</button>
+    </div>
+</div>
+<div class="flex2">
+    <div class="mast">
+        <p>BE THE MASTER OF YOUR DATA</p>
+        <h3>Robust, Industry-leading Security</h3>
+        <p>ensure tpeace of mind for yoyr organisation with wrike's enterprises grade-security, including user authentication,
+            role-based access control, and 99.9% uptime.</p>
+            <p>BE secure with write</p>   
+         <div>
+            <button class="get1">Get Started</button>
+        </div>
+    </div>
+        <div class="test">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/46b5c5fb-dfa2-4aae-a1d0-3e5c7220944c/rebrand-screenshot-lock-scheme-white.png"  width="800px" height="650px" ald ="">
+        </div>
+</div>
+<div class="for">
+    
+        <h3 class="inte">Integrate apps with just a few clicks</h3>
+        <p class="connect">Connect your existing apps and workflows with pre-made integration available for 400+ popular apps , Plus custom
+            integration for more advanced users.
+        </p>
+    </div>
+    <div >
+        <div class="container1">
+        <div class="col1">
+            <img src="https://web-static.wrike.com/content/uploads/2021/01/logoroll_logo_Microsoft-1.svg?av=d6e589809b4a79b48b5ea86cf939a9d2" alt="">
+            <p>Connect to Microsoft's powerful suite of workplace productivity tools, from outlook to excel. </p>
+        </div>
+        <div class="col1">
+            <img src="https://web-static.wrike.com/content/uploads/2020/06/rebrand-logoroll_logo_google.svg?av=9b17bb4669ab35947f32929ac955bee2" alt="">
+            <p>Familiar with Gmail, GoogleDrive, or  Google Calender? Wrike integrates with them all.</p>
+        </div>
+        <div class="col1">
+            <img src="https://web-static.wrike.com/content/uploads/2021/01/logoroll_logo_Adobe.svg?av=740facd99ed4bf710cfd83ced9a7b3f3alt=" alt="">
+            <p>Proof assets for Adobe experience Manager without leaving Wrike.</p>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="col1">
+            <img src="https://web-static.wrike.com/content/uploads/2021/01/logoroll_logo_Slack-1.svg?av=ab7a75574164e15f6104bd047d237c93" alt="">
+            <p>Ever Wanted to turn an informal slack chat into a structured task? It is easy with Wrike.</p>
+        </div>
+        <div class="col1">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/580e9e7a-59f7-46d6-8665-c39bb544d2ad/logoroll-logo-salesforce.svg" alt="">
+            <p>Give your account teams 100% visiblity into client Projects withour sales force integration.</p>
+        </div>
+        <div class="col1">
+            <img src="https://web-static.wrike.com/content/uploads/2021/04/logoroll_logo_Zoom.svg?av=9656a7ac6a87946ad86f8c67b3f6dd78" alt="">
+            <p>want to manager tasks while on a zoom call ? All you need is Actionable meeting by wrike.</p>
+        </div>
+    </div>
+    </div>
+        <div class="all">
+            <li class="inte" >See All Integration</li>
+            <button class="star">Get Started</button>
+        </div>
+        
+        <div class="head">
+            <div>
+                <h2 class="head1">Stories from our customers</h2>
+            </div>        
+            <div class="stor">
+            <div class=" stories">
+                <img src="https://web-static.wrike.com/tp/storage/uploads/2fd8f120-42dc-41e0-8188-e8b527393365/rebrand-quote-slider-image-walmart.jpg" height="350px" width="500px" alt="">
+            </div>
+        
+            <div class="head2">
+                <p >"Everyone is in Wrike daily, we've built one story and one version of the truth.
+                    And that is a game changer for us. Now we do our project reviews in wrike:no more 
+                    need for presentations, Word documents, or any of this additional work.</p>
+            </div>
+        </div>
+       
+            <div class="mid">
+            <div class="head3">
+                <h2>Support And Learning</h2>
+                <p>Wrike offers award-winning support that scales with your business. 
+                    Choose the solution that caters to all your needs with 24/7 availability and upgradeable support packages.
+
+                    If you want to maximize the utility of your work management system, 
+                    Wrike offers in-depth guides and articles on the latest product features for better productivity and efficiency.</p>
+            </div>
+            <div >
+                <img src="https://web-static.wrike.com/tp/storage/uploads/af67bde2-0417-4ebd-917e-de500cf395fb/hp-evo-support-2x.png" width="704" height="584" alt="">
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.popup{
+    background-color: aqua;
+    border: 2px solid red;
+width: 4Ø0px;
+background: #fff;
+border-radius: 6px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(1);
+text-align: center;
+padding: 0 30px 30px ;
+color  : #333;
+/* visibility: hidden */
+}
+.open-popup{
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    </style>
+
+</head>
+<body>
+    <div class="popup" id="popup">
+    <h1 id="demo">Thank you!</h1>
+    <input class="box1" type="submit" onclick="opens()">Submit</button>
+    <h1>This is your tickit number : </h1>
+    <input class="box1" type="submit" onclick="closes()">Submit</button> 
+    </div>
+
+    <div>
+
+        <h1>hii</h1>
+    </div>
+</body>
+</html>
+<script>
+
+
+let popup =document.getElementById("popup");
+    function opens(){
+        popup.classList.add("open-popup");
+
+    }
+
+    function closes(){
+        popup.classList.remove("open-popup");
+
+    }
+
+
+
+</script>

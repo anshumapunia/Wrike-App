@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .p_container{
+        /* border: 1px solid red; */
+        margin: 20px 150px 20px 150px;
+    }
+    h1{
+        text-align: center;
+        font-size:50px;
+    }
+    .p_free{
+        font-size:xx-large;
+        font-weight: bold;
+        text-align: left;
+    }
+    .p_for{
+        font-size: larger;
+        font-weight: 600;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+    .p_centralised{
+        color: grey;
+        text-align: left;
+        padding-top: 20px;
+    }
+    .p_price{
+        font-size:xx-large;
+        font-weight: bold;
+        /* padding-top: 10px; */
+        text-align: left;
+    }
+    .p_price1{
+        font-size:xx-large;
+        font-weight: bold;
+        /* padding-top: 10px; */
+        margin-top: 40px;
+        text-align: left;
+    }
+    .p_main{
+        display: flex;
+        /* border: 2px solid black ; */
+    }
+    .p_star{
+        color: green;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .p_most{
+        color:orange;
+    }
+    .p_get_start{
+        /* border: 1px solid red; */
+        padding: 20px 20px 20px 20px;
+        margin-top: 40px;
+        background-color: green;
+        color: white;
+        font-size: large;
+        border-radius: 10px;
+    }
+    .p_get_start1{
+        padding: 20px 20px 20px 20px;
+        margin-top: 60px;
+        background-color: green;
+        color: white;
+        font-size: large;
+        border-radius: 10px;
+    }
+    .p_get_start3{
+        padding: 20px 20px 20px 20px;
+        margin-top: -10px;
+        background-color: green;
+        color: white;
+        font-size: large;
+        border-radius: 10px;
+    }
+    .p_get_start4{
+        padding: 20px 20px 20px 20px;
+        margin-top: 30px;
+        background-color: green;
+        color: white;
+        font-size: large;
+        border-radius: 10px;
+    }
+    .p_credit{
+        color:gray;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    .p_flex{
+        /* border: 2px solid yellow; */
+        border-left: 1px solid rgb(234, 224, 224);
+        text-align: center;
+        padding: 20px 20px 20px 20px;
+        width: 200px;
+    }
+    .p_team{
+        font-size:xx-large;
+        font-weight: bold;
+        margin-top: -20px;
+        text-align: left;
+    }
+    .p_contact{
+         border: 3px solid darkgreen;
+         padding: 20px 20px 20px 20px;
+         margin: 20px 20px 20px 20px;
+         font-size: larger;
+         border-radius: 10px;
+         color: darkgreen;
+         font-weight: 800;
+         /* letter-spacing: 1px; */
+    }
+    .p_all_keys{
+        text-align: left;
+        color: rgba(0, 0, 0, 0.778);
+        margin-left: -40px;
+    }
+    ul {
+    list-style: none;
+    
+    }
+    ul li:before {
+    content: '✓ ';
+    color: green;
+    font-weight: bold;   
+    }
+
+    .p_container2{
+     /* border: 1px solid green; */
+    
+    }
+    .p_the{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.778);
+    font-size: large;
+    }
+    .trust{
+    color: gray;
+    font-size: small;
+    margin-top: -5px;
+    }
+     .image1
+    {      
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .logo
+    {
+    margin: 10px 10px;
+    padding-left: 20px;
+    }
+    .logo img{
+    height: 120;
+    width: 60;
+    }
+    /* .popup{
+        width: 400px;
+        background-color: aqua;
+        border-radius: 6px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    } */
+
+    /* ............................................... */
+
+
+    .c_container{
+        border: 1px solid red;
+        margin-left: 50%;
+        margin-right: 30%;
+        /* margin-top: 30%; */
+        margin-bottom: 20%;
+        padding-left: 100px; 
+        padding-right: 100px;
+        background-color: aqua;
+        border-radius: 6px;
+        position: absolute;
+        top: 0%;
+        transform: translate(-50%, -50%) scale(0.1);
+        visibility: hidden;     
+        transition: transform 0.4s, top 0.4s;
+    }
+    .open-popup{
+        visibility: visible;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .c_contact{
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .c_tell{
+        text-align: center;
+        font-size: 20px;
+    }
+    .c_input{
+        padding: 15px 200px 15px 15px;
+        margin-top: 30px;
+        border: 2px solid gray;
+        /* background-color: green; */
+        color: black;
+        font-size: large;
+        border-radius: 10px;
+    }
+    .c_submit{
+        padding:30px 200px 30px 140px;
+        margin-top: 30px;
+        margin-bottom: 10%;
+        border: 2px solid gray;
+        background-color: green;
+        color: white;
+        font-size: larger;
+        border-radius: 10px; 
+    }
+   
+    
+</style>
+<body>
+<div class="p_container">
+    <h1>Plans for Every Team</h1>
+    <div class="p_main">
+         <div class="p_flex">
+                <p class="p_free">Free</p>
+                <p class="p_for">For teams getting started</p>
+                <p class="p_centralised">Centralized task management</p>
+                <p class="p_price">$0</p>
+                <p class="p_contact">Get Started</p>
+                <p class="p_credit">No credit card required</p>
+                <p>Key features: </p>
+            <div class="p_all_keys">
+                <ul>
+                    <li>Web, desktop, and mobile apps</li>
+                    <li>Project & task management</li>
+                    <li>Board view</li>
+                    <li>Locked spaces</li>
+                    <li>Advanced reporting and BI</li>
+                    <li>Team utilization and performance</li>
+                    <li>job roles</li>
+                    <li>Budgeting and billable</li>
+                    <li>Board view</li>
+                    <li>Locked spaces</li>  
+                    <p class="p_get_start">Get Started</p>
+                    <p class="p_credit">No credit card required</p>
+                </ul>
+            </div>
+
+         </div>
+         <div class="p_flex">
+                <p class="p_star">⭐ NEW</p>
+                <p class="p_team">Team</p>
+                <p class="p_for">For growing teams</p>
+                <p class="p_centralised">Effective team management</p>
+                <p class="p_price1">$9.80</p>
+                <p class="p_get_start1">Get Started</p>
+                <p class="p_credit">No credit card required</p>
+                <p>Everything in Free plan plus:</p>
+            <div class="p_all_keys">
+                <ul>
+                    <li>Unlimited projects</li>
+                    <li>Unlimited tasks</li>
+                    <li>Unlimited custom</li>
+                    <!-- <li>Unlimited request</li> -->
+                    <li>Board view</li>
+                    <li>Board view</li>
+                    <li>Locked spaces</li>
+                    <li>Locked spaces</li>
+                    <li>Advanced reporting and BI</li>
+                    <li>2 GB storage per user</li>
+                    <li>Integration & open API</li>
+                    <li>google and Microsoft SSO </li>
+                    <p class="p_get_start">Get Started</p>
+                    <p class="p_credit">No credit card required</p>
+                </ul>
+            </div>
+         </div>
+            <div class="p_flex">
+                <p class="p_star">🔥MOST POPULAR</p>
+                <p class="p_team">Business</p>
+                <p class="p_for">For all teams across an organization</p>
+                <p class="p_centralised">Customized platform for any team or use case</p>
+                <p class="p_price">$24.80</p>
+                <p class="p_get_start3">Get Started</p>
+                <p class="p_credit">No credit card required</p>
+                <p>Every thing in Team plan plus:</p>
+            <div class="p_all_keys">
+                <ul>
+                   <li>Folder Structure & nested Projects</li>
+                   <li>Cross-tagging</li>
+                   <li>Project Blueprints</li>
+                   <li>Custom item types</li>
+                   <li>Locked spaces</li>
+                   <li>Advanced reporting and BI</li>
+                   <li>Team utilization and performance</li>
+                   <li>Resource Management</li>
+                   <li>Reports and unlimited</li>
+                   <li>Dashboards</li>
+                   <p class="p_get_start">Get Started</p>
+                   <p class="p_credit">No credit card required</p>
+                </ul>     
+            </div>
+         </div>
+         <div class="p_flex">
+                <p class="p_free">Enterprise</p>
+                <p class="p_for">For large teams</p>
+                <p class="p_centralised">Enterprise-grade security and scalability</p>
+                <button type="submit" class="p_contact" onclick="openPopup()">contact as</button>
+                <p class="p_get_start4">Get Started</p>
+                <p class="p_credit">No credit card required</p>
+                <p>Everything in Bussiness plan plus:</p>
+            <div class="p_all_keys">
+                <ul>
+                    <li>Single Sign-On (SSO)</li>
+                    <li>Budgeting</li>
+                    <li>Two factor Aunthication (2FA)</li>
+                    <li>Password policies</li>
+                    <li>Custom access roles</li>
+                    <li>Admin permissions</li>
+                    <li>User audit reports</li>
+                    <li>Autamations</li>
+                    <li>job roles</li>
+                    <li>Budgeting</li>
+                    <p class="p_get_start">Get Started</p>
+                    <p class="p_credit">No credit card required</p>
+                </ul>
+            </div>
+         </div>
+         <div class="p_flex">
+                <p class="p_free">Pinnacle</p>
+                <p class="p_for">For teams with complex work needs</p>
+                <p class="p_centralised">Advanced tools and analytics for complex work</p>
+                <button type="submit" class="p_contact" onclick="openPopup()">contact as</button>
+                <p class="p_get_start3">Get Started</p>
+                <p class="p_credit">No credit card required</p>
+                <p>Everything in Enterprise plan plus:</p>
+            <div class="p_all_keys">
+                    <ul>
+                    <li>Locked spaces</li>
+                    <li>Advanced reporting and BI</li>
+                    <li>Team utilization and performance</li>
+                    <li>job roles</li>
+                    <li>Budgeting and billable</li>
+                    <li>Bookings</li>
+                    <li>job roles</li>
+                    <li>Custom access roles</li>
+                    <li>Admin permissions</li>
+                    <li>User audit reports</li>
+                    <p class="p_get_start">Get Started</p>
+                    <p class="p_credit">No credit card required</p>
+                </ul>
+            </div>
+         </div>
+    </div>
+   <div class="p_container2">
+    <p class="p_the">The pricing outlined herein is valid only as to new purchases occurring on or after October 25, 2022, and is not offered and does not apply to any prior</p>
+    <p class="p_the">purchases. Wrike reserves the right to adjust its packaging and pricing at any time.</p>
+    <p class="p_the">Amount shown is price per month and billed on an annual per user basis.</p>
+    <div class="image1">
+        <div class="logo">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-google.svg" alt="">
+        </div>
+        <div class="logo">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/17e81db2-0802-47a7-8037-8cb11d166299/1440-logoroll-logo-syneos.svg">
+        </div>
+        <div class="logo">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-lyft.svg" alt="">
+        </div>
+        <div class="logo">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/1440-logoroll-logo-siemens.svg" alt="">
+        </div>
+        <div class="logo">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/473c0f49-59e8-4422-89d7-184c44f362cf/1440-logoroll-logo-nickelodeon.svg" alt="">
+        </div>
+        <div class="logo">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/3b19367a-9020-408b-8af7-5e89773b8d4b/1440-logoroll-logo-oglivy.svg" alt="">
+        </div>
+        <div class="logo">
+            <img src="https://web-static.wrike.com/tp/storage/uploads/1440-logoroll-logo-snowflake.svg" alt="">
+        </div>
+
+        <div>
+            <p class="trust">TRUSTED BY 20,000+ ORGANIZATIONS WORLDWIDE</p>            
+        </div>
+        
+    </div>
+   </div>
+</div>
+<div class="c_container" id="popup">
+    <p class="c_contact">Contact sales</p>
+    <p class="c_tell">Tell us a little bit about yourself and we will be in touch with you within 24 hours.</p>
+    <form id="form">
+        <input class="c_input" type="text" id="name" placeholder="Full Name"><br>
+        <input class="c_input" type="email" id="email" placeholder="Email" name="lname"><br>
+        <input class="c_input" type="number" id="phone" placeholder="Phone" name="lname"><br>
+        <input class="c_input" type="text" id="department" placeholder="Department" name="lname"><br>
+        <input class="c_input" type="text" id="job" placeholder="Job level" name="lname"><br>
+        <button class="c_submit"type="submit"  onclick="closePopup()">Submit</button>
+      </form> 
+</div>
+</body>
+</html>
+
+<script>
+    var form =document.getElementById('form')
+
+    form.addEventListener('submit', function(event){
+    event.preventDefault();
+    
+    var userName =document.getElementById('name').value
+    console.log(userName);
+
+    var emails = document.getElementById('email').value
+    console.log(emails);
+
+    var phoneNumber = document.getElementById('phone').value
+    console.log(phoneNumber);
+
+    var depart = document.getElementById('department').value
+    console.log(depart);
+
+    var jobs = document.getElementById('job').value
+    console.log(jobs);
+})
+
+
+let popup =document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-popup");
+
+    }
+
+    function closePopup(){
+        popup.classList.remove("open-popup");
+
+    }
+
+</script>
